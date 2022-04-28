@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>canvas</title>
+    <link rel="stylesheet" href="canvas.css">
+    <!-- <script languagu="javascript">
+        function deshabilitarMenuContextual() {
+            return false
+        }
+        document.oncontextmenu = deshabilitarMenuContextual
+    </script> -->
+</head>
+
+<body>
+    <div class="field">
+        <h2>Solo para ordenadores.</h2>
+        <div class="tools">
+            <button onclick="undo_last()" type="button" class="button">deshacer</button>
+            <button onclick="clear_canvas()" type="button" class="button">borrar</button>
+
+            <div onclick="change_color(this)" class="color-field" style="background: red;"></div>
+            <div onclick="change_color(this)" class="color-field" style="background: blue;"></div>
+            <div onclick="change_color(this)" class="color-field" style="background: green;"></div>
+            <div onclick="change_color(this)" class="color-field" style="background: yellow;"></div>
+
+            <input oninput="draw_color = this.value" type="color" class="color-picker">
+            <input type="range" min="1" max="100" class="pen-range" oninput="draw_width = this.value">
+        </div>
+        <canvas id="canvas"></canvas>
+    </div>
+    <script src="canvas.js"></script>
+</body>
+
+</html>

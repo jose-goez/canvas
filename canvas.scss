@@ -1,0 +1,79 @@
+body {
+    margin: 0;
+    padding: 30px;
+    font-family: sans-serif;
+    overflow: hidden;
+    background: #313131;
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+
+html,
+body {
+    max-width: 100% !important;
+    overflow-x: hidden !important;
+}
+
+.field {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+
+canvas {
+    box-shadow: -3px 2px 9px 6px black;
+    cursor: pointer;
+}
+
+.tools {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    // flex-direction:column ;
+    flex-wrap: wrap;
+    // flex-direction: row;
+    // margin-bottom: 0px;
+}
+
+.tools .color-field {
+    height: 40px;
+    width: 40px;
+    min-height: 40px;
+    min-width: 40px;
+    cursor: pointer;
+    display: inline-block;
+    box-sizing: border-box;
+    border-radius: 50%;
+    border: 2px solid #fff;
+    align-self: center;
+    margin: 0 10px;
+}
+
+.tools .button {
+    align-self: center;
+    width: 200px;
+    height: 40px;
+    border: 2px solid #fff;
+    color: #fff;
+    background: #222;
+    font-weight: bold;
+    margin: 0 10px;
+}
+
+.color-picker {
+    align-self: center;
+    margin: 0 10px;
+    height: 50px;
+}
+
+.pen-range {
+    align-self: center;
+    margin: 0 10px;
+}
